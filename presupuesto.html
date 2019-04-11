@@ -37,23 +37,23 @@
                               <div class="input-group">
                                     <span class="input-group-addon"><img src="icons/tb.png" alt=""></span>
                                     <input id="tipo_barco" type="text" name="tipo_barco" class="form-control" placeholder="Tipo de Barco" onclick="mostrar('tipo_barco')" />
-                                    <input id="tipo_barco" type="hidden" name="tipo_barco" class="form-control" placeholder="Tipo de Barco"/>
+                                    <input id="tipo_barco-hidden" type="hidden" name="tipo_barco" class="form-control" placeholder="Tipo de Barco"/>
                               </div>
                               <div id="tipo_barco-options" class="back-white input-group" style="display: none">
                                     <label class="containercheck">
-                                          <input type="checkbox" name="operacion[]" value="1"><span class="text-check">One</span>
+                                          <input type="checkbox" name="tipo-barco[]" value="One"><span class="text-check">One</span>
                                           <span class="checkmark"></span>
                                     </label>
                                     <label class="containercheck">
-                                          <input type="checkbox" name="operacion[]" value="2"><span class="text-check">Two</span>
+                                          <input type="checkbox" name="tipo-barco[]" value="Two"><span class="text-check">Two</span>
                                           <span class="checkmark"></span>
                                     </label>
                                     <label class="containercheck">
-                                          <input type="checkbox" name="operacion[]" value="3"><span class="text-check">Three</span>
+                                          <input type="checkbox" name="tipo-barco[]" value="Three"><span class="text-check">Three</span>
                                           <span class="checkmark"></span>
                                     </label>
                                     <label class="containercheck">
-                                          <input type="checkbox" name="operacion[]" value="4"><span class="text-check">Four</span>
+                                          <input type="checkbox" name="tipo-barco[]" value="Four"><span class="text-check">Four</span>
                                           <span class="checkmark"></span>
                                     </label>
                               </div>
@@ -63,8 +63,8 @@
                         <div class="form-group col-sm-12">
                               <div class="input-group">
                                     <span class="input-group-addon"><img src="icons/persons.png" alt=""></span>
-                                    <input id="cant_personas" type="text" name="cant_personas" class="form-control" placeholder="Cantidad de Personas" onclick="mostrar('cant_personas')" />
-                                    <input id="cant_personas-hidden" type="hidden" name="cant_personas-hidden" class="form-control" placeholder="Cantidad de Personas"/>
+                                    <input id="cant_personas" type="text" name="cant_personas" class="form-control adultos-cant-input chicos-cant-input bebes-cant-input" placeholder="Cantidad de Personas" onclick="mostrar('cant_personas')" />
+                                    <input id="cant_personas-hidden" type="hidden" name="cant_personas-hidden" class="form-control adultos-cant-input-hidden chicos-cant-input-hidden bebes-cant-input-hidden" placeholder="Cantidad de Personas"/>
                               </div>
                               <div id="cant_personas-options" class="back-white" style="display: none">
                                     <div id="cantidades-row" class="row">
@@ -117,12 +117,12 @@
                         <div class="form-group col-sm-6">
                               <div class="input-group">
                                     <span class="input-group-addon"><img src="icons/cabinas.png" alt=""></span>
-                                    <input id="cabinas" type="text" name="cabinas" class="form-control" placeholder="Cabinas"  onclick="mostrar('cabinas')" />
-                                    <input id="cabinas" type="hidden" name="cabinas" class="form-control" placeholder="Cabinas"/>
+                                    <input id="cabinas" type="text" name="cabinas" class="form-control doble-cant-input twins-cant-input single-cant-input" placeholder="Cabinas"  onclick="mostrar('cabinas')" />
+                                    <input id="cabinas-hidden" type="hidden" name="cabinas" class="form-control doble-cant-input-hidden twins-cant-input-hidden single-cant-input-hidden" placeholder="Cabinas"/>
                               </div>
                               <div id="cabinas-options" class="back-white" style="display: none">
                                           <div class="row" style="display: flex; text-align: center; padding-top: 20px;">
-                                                <div class="form-group col-sm-6 text-center line40">Adultos</div>
+                                                <div class="form-group col-sm-6 text-center line40">Double</div>
                                                 <div class="form-group col-sm-6 text-center">
                                                       <div id="doble-less" class="line40 less gris radius" onclick="less('doble-cant')">-</div>
                                                       <input id="doble-cant" class="line40 cant" type="number" value = 0>
@@ -130,7 +130,7 @@
                                                 </div>
                                           </div>
                                           <div class="row" style="display: flex; text-align: center">
-                                                <div class="form-group col-sm-6 text-center line40">Chicos</div>
+                                                <div class="form-group col-sm-6 text-center line40">Twin's</div>
                                                 <div class="form-group col-sm-6 text-center">
                                                       <div id="twins-less" class="line40 less gris radius" onclick="less('twins-cant')">-</div>
                                                       <input id="twins-cant" class="line40 cant" type="number" value = 0>
@@ -138,7 +138,7 @@
                                                 </div>
                                           </div>
                                           <div class="row" style="display: flex; text-align: center">
-                                                <div class="form-group col-sm-6 text-center line40">Bebés</div>
+                                                <div class="form-group col-sm-6 text-center line40">Single</div>
                                                 <div class="form-group col-sm-6 text-center">
                                                       <div id="single-less" class="line40 less gris radius" onclick="less('single-cant')">-</div>
                                                       <input id="single-cant" class="line40 cant" type="number" value = 0>
@@ -159,35 +159,35 @@
                               <div class="input-group">
                                     <span class="input-group-addon"><img src="icons/banios.png" alt=""></span>
                                     <input id="banio" type="text" name="banio" class="form-control" placeholder="Banio" onclick="mostrar('banio')" />
-                                    <input id="banio" type="hidden" name="banio" class="form-control" placeholder="Banio" />
+                                    <input id="banio-hidden" type="hidden" name="banio" class="form-control" placeholder="Banio" />
                               </div>
                               <div id="banio-options" class="back-white" style="display: none">
                                     <div class="row">
                                           <div class="form-group col-sm-5" style="padding-left: 75px;">
                                                 <label class="containercheck containercheck-banios">
-                                                      <input type="checkbox" name="operacion[]" value="1"><span class="text-check">1</span>
+                                                      <input type="radio" name="banio-radio" value="1"><span class="text-check">1</span>
                                                       <span class="checkmark checkmark-banios"></span>
                                                 </label>
                                                 <label class="containercheck containercheck-banios">
-                                                      <input type="checkbox" name="operacion[]" value="2"><span class="text-check">2</span>
+                                                      <input type="radio" name="banio-radio" value="2"><span class="text-check">2</span>
                                                       <span class="checkmark checkmark-banios"></span>
                                                 </label>
                                                 <label class="containercheck containercheck-banios">
-                                                      <input type="checkbox" name="operacion[]" value="3"><span class="text-check">3</span>
+                                                      <input type="radio" name="banio-radio" value="3"><span class="text-check">3</span>
                                                       <span class="checkmark checkmark-banios"></span>
                                                 </label>
                                           </div>
                                           <div class="form-group col-sm-6">
                                                 <label class="containercheck containercheck-banios">
-                                                      <input type="checkbox" name="operacion[]" value="1"><span class="text-check">4</span>
+                                                      <input type="radio" name="banio-radio" value="4" ><span class="text-check">4</span>
                                                       <span class="checkmark checkmark-banios"></span>
                                                 </label>
                                                 <label class="containercheck containercheck-banios">
-                                                      <input type="checkbox" name="operacion[]" value="2"><span class="text-check">5</span>
+                                                      <input type="radio" name="banio-radio" value="5" ><span class="text-check">5</span>
                                                       <span class="checkmark checkmark-banios"></span>
                                                 </label>
                                                 <label class="containercheck-banios containercheck">
-                                                      <input type="checkbox" name="operacion[]" value="3"><span class="text-check">6+</span>
+                                                      <input type="radio" name="banio-radio" value="6+"><span class="text-check">6+</span>
                                                       <span class="checkmark checkmark-banios"></span>
                                                 </label>
                                           </div>
@@ -205,27 +205,27 @@
                               </div>
                               <div id="programa-options" class="back-white" style="display: none">
                                     <label class="containercheck containercheck-programa">
-                                          <input type="checkbox" name="operacion[]" value="ALQUILER DE BARCO PRIVADO"><span class="text-check">ALQUILER DE BARCO PRIVADO</span>
+                                          <input type="radio" name="programa" value="ALQUILER DE BARCO PRIVADO"><span class="text-check">ALQUILER DE BARCO PRIVADO</span>
                                           <span class="checkmark checkmark-programa"></span>
                                     </label>
                                     <label class="containercheck containercheck-programa">
-                                          <input type="checkbox" name="operacion[]" value="ALQUILER DE CAMAROTE"><span class="text-check">ALQUILER DE CAMAROTE</span>
+                                          <input type="radio" name="programa" value="ALQUILER DE CAMAROTE"><span class="text-check">ALQUILER DE CAMAROTE</span>
                                           <span class="checkmark checkmark-programa"></span>
                                     </label>
                                     <label class="containercheck containercheck-programa">
-                                          <input type="checkbox" name="operacion[]" value="DAY CHARTER"><span class="text-check">DAY CHARTER</span>
+                                          <input type="radio" name="programa" value="DAY CHARTER"><span class="text-check">DAY CHARTER</span>
                                           <span class="checkmark checkmark-programa"></span>
                                     </label>
                                     <label class="containercheck containercheck-programa">
-                                          <input type="checkbox" name="operacion[]" value="BARCO TRIPULADO"><span class="text-check">BARCO TRIPULADO</span>
+                                          <input type="radio" name="programa" value="BARCO TRIPULADO"><span class="text-check">BARCO TRIPULADO</span>
                                           <span class="checkmark checkmark-programa"></span>
                                     </label>
                                     <label class="containercheck containercheck-programa">
-                                          <input type="checkbox" name="operacion[]" value="FLOTILLA"><span class="text-check">FLOTILLA</span>
+                                          <input type="radio" name="programa" value="FLOTILLA"><span class="text-check">FLOTILLA</span>
                                           <span class="checkmark checkmark-programa"></span>
                                     </label>
                                     <label class="containercheck containercheck-programa">
-                                          <input type="checkbox" name="operacion[]" value="BARCO FLUVIAL"><span class="text-check">BARCO FLUVIAL</span>
+                                          <input type="radio" name="programa" value="BARCO FLUVIAL"><span class="text-check">BARCO FLUVIAL</span>
                                           <span class="checkmark checkmark-programa"></span>
                                     </label>
                                    
@@ -235,23 +235,23 @@
                               <div class="input-group">
                                     <span class="input-group-addon"><img src="icons/tripulacion.png" alt=""></span>
                                     <input id="tripulacion" type="text" name="tripulacion" class="form-control" placeholder="Tripulación"  onclick="mostrar('tripulacion')"/>
-                                    <input id="tripulacion" type="hidden" name="tripulacion" class="form-control" placeholder="Tripulación" />
+                                    <input id="tripulacion-hidden" type="hidden" name="tripulacion" class="form-control" placeholder="Tripulación" />
                               </div>
                               <div id="tripulacion-options" class="back-white" style="display: none">
                                     <label class="containercheck">
-                                          <input type="checkbox" name="operacion[]" value="1"><span class="text-check">
+                                          <input type="radio" name="tripulacion" value="CON PATRÓN"><span class="text-check">
                                                 CON PATRÓN<BR><small>Muestra barcos con patrón obligatorio u opcional</small>
                                           </span>
                                           <span class="checkmark"></span>
                                     </label>
                                     <label class="containercheck">
-                                          <input type="checkbox" name="operacion[]" value="2"><span class="text-check">
+                                          <input type="radio" name="tripulacion" value="SIN PATRÓN"><span class="text-check">
                                                 SIN PATRÓN<BR><small>Muestra barcos con patrón obligatorio o sin servicio de patrón</small>
                                           </span>
                                           <span class="checkmark"></span>
                                     </label>
                                     <label class="containercheck">
-                                          <input type="checkbox" name="operacion[]" value="3"><span class="text-check">
+                                          <input type="radio" name="tripulacion" value="ALL INCLUSIVE"><span class="text-check">
                                                 ALL INCLUSIVE / TRIPULACIÓN COMPLETA<BR><small>Tripulación permanente y barcos all inclusive</small>
                                           </span>
                                           <span class="checkmark"></span>
@@ -264,17 +264,31 @@
                               <div class="input-group">
                                     <span class="input-group-addon"><img src="icons/marca.png" alt=""></span>
                                     <input id="marca_modelo" type="text" name="marca_modelo" class="form-control" placeholder="Marca / Modelo" onclick="mostrar('marca_modelo')" />
-                                    <input id="marca_modelo" type="hidden" name="marca_modelo" class="form-control" placeholder="Marca / Modelo"/>
+                                    <input id="marca_modelo-hidden" type="hidden" name="marca_modelo" class="form-control" placeholder="Marca / Modelo"/>
                               </div>
                               <div id="marca_modelo-options" class="back-white" style="display: none">
-                                    <ul>
-                                          <li>ALQUILER DE BARCO PRIVADO</li>
-                                          <li>ALQUILER DE CAMAROTE</li>
-                                          <li>DAY CHARTER</li>
-                                          <li>BARCO TRIPULADO</li>
-                                          <li>FLOTILLA</li>
-                                          <li>BARCO FLUVIAL</li>
-                                    </ul>
+
+                                    <label class="containercheck containercheck-modelo">
+                                          <input type="radio" name="modelo" value="Modelo 1"><span class="text-check">Modelo 1</span>
+                                          <span class="checkmark checkmark-modelo"></span>
+                                    </label>
+                                    <label class="containercheck containercheck-modelo|">
+                                          <input type="radio" name="modelo" value="Modelo 2"><span class="text-check">Modelo 2</span>
+                                          <span class="checkmark checkmark-modelo"></span>
+                                    </label>
+                                    <label class="containercheck containercheck-modelo">
+                                          <input type="radio" name="modelo" value="Modelo 3"><span class="text-check">Modelo 3</span>
+                                          <span class="checkmark checkmark-modelo"></span>
+                                    </label>
+                                    <label class="containercheck containercheck-modelo">
+                                          <input type="radio" name="modelo" value="Modelo 4"><span class="text-check">Modelo 4</span>
+                                          <span class="checkmark checkmark-modelo"></span>
+                                    </label>
+                                    <label class="containercheck containercheck-modelo">
+                                          <input type="radio" name="modelo" value="Modelo 5"><span class="text-check">Modelo 5</span>
+                                          <span class="checkmark checkmark-modelo"></span>
+                                    </label>
+                                    
                               </div>
                         </div>
                   </div>
@@ -283,7 +297,7 @@
                               <div class="input-group">
                                     <span class="input-group-addon"><img src="icons/marca.png" alt=""></span>
                                     <textarea cols="8" rows="3" id="detalles"  name="detalles" class="form-control" placeholder="Detalles" ></textarea>
-                                    <textarea style="display: none" cols="8" rows="3" id="detalles" name="detalles" class="form-control" placeholder="Detalles" ></textarea>
+                                    <textarea style="display: none" cols="8" rows="3" id="detalles-hidden" name="detalles" class="form-control" placeholder="Detalles" ></textarea>
                               </div>
                         </div>
                   </div>
@@ -299,7 +313,7 @@
                               <div class="input-group">
                                     <span class="input-group-addon"><img src="icons/telefono.png" alt=""></span>
                                     <input id="nombre_apellido" type="text" name="nombre_apellido" class="form-control" placeholder="Nombre y Apellido"/>
-                                    <input id="nombre_apellido" type="hidden" name="nombre_apellido" class="form-control" placeholder="Nombre y Apellido"/>
+                                    <input id="nombre_apellido-hidden" type="hidden" name="nombre_apellido" class="form-control" placeholder="Nombre y Apellido"/>
                               </div>
                         </div>
                   </div>
@@ -308,7 +322,7 @@
                               <div class="input-group">
                                     <span class="input-group-addon"><img src="icons/email.png" alt=""></span>
                                     <input id="email" type="text" name="email" class="form-control" placeholder="e-mail"/>
-                                    <input id="email" type="hidden" name="email" class="form-control" placeholder="e-mail"/>
+                                    <input id="email-hidden" type="hidden" name="email" class="form-control" placeholder="e-mail"/>
                               </div>
                         </div>
                   </div>
@@ -317,7 +331,7 @@
                               <div class="input-group">
                                     <span class="input-group-addon"><img src="icons/telefono.png" alt=""></span>
                                     <input id="telefono" type="text" name="telefono" class="form-control" placeholder="teléfono"/>
-                                    <input id="telefono" type="hidden" name="telefono" class="form-control" placeholder="teléfono"/>
+                                    <input id="telefono-hidden" type="hidden" name="telefono" class="form-control" placeholder="teléfono"/>
                               </div>
                         </div>
                   </div>
@@ -325,6 +339,11 @@
                   <div class="form-group col-sm-12">
                         <input type="submit" id="submit" name="submit" class="btn btn-large btn-primary btn-block" value="ENVIAR SOLICITUD"/>
                   </div>
+                  <div class="row">
+                  <div class="form-group col-sm-12">
+                        <div id="resultado" type="hidden" style="width:100%;"></div>
+                  </div>
+
             </div>
             </div>
             <div id="second-section">

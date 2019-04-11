@@ -22,7 +22,6 @@ body{
 }
 
 
-
 #subtitle{
     color: #ffffff;
     font-weight: 500;
@@ -41,7 +40,6 @@ body{
 .first-row{
     margin-top: 40px;
 }
-
 
 .form-control{
     -webkit-padding: 20px 20px 20px 0px;
@@ -102,7 +100,6 @@ body{
     height: 650px;
 }
 
-
 .place-icons{
     position: absolute;
     margin-top: 8px;
@@ -149,7 +146,6 @@ body{
     text-align: rcenter;
 }
 
-
 .row-eq-height {
     background-clip: content-box;
     max-height: 210px;
@@ -167,7 +163,7 @@ body{
 .cant{
     display: inline-block;
     width: 40px;
-    border: 1px solid #eeeeee;
+    border: 0px;
     text-align: right;
     
 }
@@ -180,8 +176,6 @@ body{
 #cant-personas-display{
     width: 100%;
 }
-
-
 
 #total{
     display: flex;
@@ -200,8 +194,6 @@ body{
 }
 
 #cantidades-row{
-    /*display: flex;*/
-    
     align-items: center;
 }
 
@@ -213,7 +205,6 @@ body{
     background-color: #eeeeee;
 }
 
-/* The container */
 .containercheck {
     display: block;
     position: relative;
@@ -227,7 +218,7 @@ body{
     user-select: none;
   }
 
-  /* Hide the browser's default checkbox */
+  /* Ocultar el checkbox original del navegador */
   .containercheck input {
     position: absolute;
     opacity: 0;
@@ -236,7 +227,9 @@ body{
     width: 0;
   }
 
-  /* Create a custom checkbox */
+  
+  /* Crear un checkbox particular */
+  
   .checkmark {
     position: absolute;
     top: 11px;
@@ -258,32 +251,36 @@ body{
   .containercheck:hover input ~ .checkmark {
     background-color: #ccc;
   }
+
+
+  /* pone la letra en azul al hover */
   .containercheck:hover{
       color: #2196F3;
  }
 
-  /* When the checkbox is checked, add a blue background */
+  /* pone fondo azul del check cuando esta chequeado */
   .containercheck input:checked ~ .checkmark {
     background-color: #2196F3;
   }
 
+  /* pone en azul el texto cuando está selecciondo */
    .containercheck input:checked ~ .text-check{
       color: #2196F3;
   }
 
-  /* Create the checkmark/indicator (hidden when not checked) */
+  /* CCrea el checkmark/indicator (Oculto cuando no está seleccionado) */
   .checkmark:after {
     content: "";
     position: absolute;
     display: none;
   }
 
-  /* Show the checkmark when checked */
+  /* Mostrar el checkmark cuando checkeas */
   .containercheck input:checked ~ .checkmark:after {
     display: block;
   }
 
-  /* Style the checkmark/indicator */
+  /* Estilo checkmark/indicator */
   .containercheck .checkmark:after {
     left: 9px;
     top: 5px;
@@ -302,7 +299,6 @@ body{
     padding-bottom: 20px;
     line-height: 32px;
   }
-
 
   .containercheck-programa{
       font-size: 15px;
@@ -331,4 +327,20 @@ body{
 
 .containercheck-programa input:checked ~ .checkmark-programa {
     background-color: transparent;
+    /*  aca creo que va el cambio de imagen del check  */
 }
+
+
+span.checkmark.checkmark-modelo{
+    display: none;
+}
+
+#tripulacion-options .text-check, #marca_modelo-options .text-check{
+    font-size: 15px;
+}
+#tripulacion-options, #marca_modelo-options{
+    padding-left: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
