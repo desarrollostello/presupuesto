@@ -80,12 +80,14 @@ $(document).ready(function() {
 		console.log("Nombre y Apellido: " + $('#nombre_apellido-hidden').val());
 		console.log("Email: " + $('#email-hidden').val());
 		console.log("Teléfono: " + $('#telefono-hidden').val());
-
-	
 	});
 
 
-
+	var ww = document.body.clientWidth;
+	if (ww < 767) {
+				$('#total').removeClass('row-eq-height');
+				$('#total').addClass('row-eq-height-760');
+	};
 
 	
 });

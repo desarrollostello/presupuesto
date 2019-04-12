@@ -68,41 +68,63 @@
                               </div>
                               <div id="cant_personas-options" class="back-white" style="display: none">
                                     <div id="cantidades-row" class="row">
-                                          <div id="cant-personas-display">
-                                                      <div class="form-group col-sm-6 row-eq-height">
-                                                            <div class="row" style="display: flex; text-align: center; padding-top: 20px;">
-                                                                  <div class="form-group col-sm-6 text-center line40">Adultos</div>
-                                                                  <div class="form-group col-sm-6 text-center">
+                                         
+                                          <div class="form-group col-xs-12 col-sm-6 row-eq-height">
+                                                <div class="pr15 row" style="display: flex; text-align: center; padding-top: 20px;">
+                                                      <div class="form-group col-xs-6 col-sm-6 text-center line40">Adultos</div>
+                                                      <div class="form-group col-xs-6 col-sm-6 text-center">
+                                                                  <div class="form-group col-xs-4 col-sm-4 text-center">
                                                                         <div id="adultos-less" class="line40 less gris radius" onclick="less('adultos-cant')">-</div>
-                                                                        <input id="adultos-cant" class="line40 cant" type="number" value = 0>
+                                                                  </div>
+                                                                  <div class="form-group col-xs-4 col-sm-4 text-center">
+                                                                        <input id="adultos-cant" class="form-control" type="number" value = 0>
+                                                                  </div>
+                                                                  <div class="form-group col-xs-4 col-sm-4 text-center">
                                                                         <div id="adultos-more" class="line40 more gris radius" onclick="more('adultos-cant')">+</div>
                                                                   </div>
-                                                            </div>
-                                                            <div class="row" style="display: flex; text-align: center">
-                                                                  <div class="form-group col-sm-6 text-center line40">Chicos</div>
-                                                                  <div class="form-group col-sm-6 text-center">
-                                                                        <div id="chicos-less" class="line40 less gris radius" onclick="less('chicos-cant')">-</div>
-                                                                        <input id="chicos-cant" class="line40 cant" type="number" value = 0>
-                                                                        <div id="chicos-more" class="line40 more gris radius"  onclick="more('chicos-cant')">+</div>
-                                                                  </div>
-                                                            </div>
-                                                            <div class="row" style="display: flex; text-align: center; padding-bottom: 20px;">
-                                                                  <div class="form-group col-sm-6 text-center line40">Bebés</div>
-                                                                  <div class="form-group col-sm-6 text-center">
-                                                                        <div id="bebes-more" class="line40 less gris radius" onclick="less('bebes-cant')">-</div>
-                                                                        <input id="bebes-cant" class="line40 cant" type="number" value = 0>
-                                                                        <div id="bebes-more" class="line40 more gris radius"  onclick="more('bebes-cant')">+</div>
-                                                                  </div>
-                                                            </div>
+
                                                       </div>
+                                                </div>
+                                                <div class="pr15 row" style="display: flex; text-align: center">
+                                                      <div class="form-group col-xs-6 col-sm-6 text-center line40">Chicos</div>
+                                                      <div class="form-group col-xs-6 col-sm-6 text-center">
+                                                            <div class="form-group col-xs-4 col-sm-4 text-center">
+                                                                  <div id="chicos-less" class="line40 less gris radius" onclick="less('chicos-cant')">-</div>
+                                                            </div>
+
+                                                            <div class="form-group col-xs-4 col-sm-4 text-center">
+                                                                  <input id="chicos-cant" class="form-control" type="number" value = 0>
+                                                            </div>
+                                                            <div class="form-group col-xs-4 col-sm-4 text-center">
+                                                                  <div id="chicos-more" class="line40 more gris radius"  onclick="more('chicos-cant')">+</div>
+                                                            </div>
+                                                            
+                                                            
+                                                      </div>
+                                                </div>
+                                                <div class="pr15 row" style="display: flex; text-align: center; padding-bottom: 20px;">
+                                                      <div class="form-group col-xs-6 col-sm-6 text-center line40">Bebés</div>
+                                                      <div class="form-group col-xs-6 col-sm-6 text-center">
+                                                            <div class="form-group col-xs-4 col-sm-4 text-center">
+                                                                  <div id="bebes-more" class="line40 less gris radius" onclick="less('bebes-cant')">-</div>
+                                                            </div>
+                                                            <div class="form-group col-xs-4 col-sm-4 text-center">
+                                                                  <input id="bebes-cant" class="form-control" type="number" value = 0>
+                                                            </div>
+                                                            <div class="form-group col-xs-4 col-sm-4 text-center">
+                                                                  <div id="bebes-more" class="line40 more gris radius"  onclick="more('bebes-cant')">+</div>
+                                                            </div>
+                                                            
+                                                      </div>
+                                                </div>
                                           </div>
                                           
-                                          <div class="form-group col-sm-6 row-eq-height" id="total">
+                                          <div  class="form-group col-sm-6 col-xs-12 row-eq-height" id="total">
                                                 <div class="row" id="total-personas">
-                                                            <div class="form-group col-sm-6">
+                                                            <div class="form-group col-xs-6 col-sm-6">
                                                                   <div class="total">Total</div>
                                                             </div>
-                                                            <div class="form-group col-sm-6">
+                                                            <div class="form-group col-xs-6 col-sm-6">
                                                                   <input id="total-cant" class="adultos-cant-total chicos-cant-total bebes-cant-total line40 cant" type="number" value = 0>
                                                             </div>
                                                 </div>
@@ -122,32 +144,32 @@
                               </div>
                               <div id="cabinas-options" class="back-white" style="display: none">
                                           <div class="row" style="display: flex; text-align: center; padding-top: 20px;">
-                                                <div class="form-group col-sm-6 text-center line40">Double</div>
-                                                <div class="form-group col-sm-6 text-center">
+                                                <div class="form-group col-xs-5 col-sm-6 text-center line40">Double</div>
+                                                <div class="form-group col-xs-6 col-sm-6 text-center">
                                                       <div id="doble-less" class="line40 less gris radius" onclick="less('doble-cant')">-</div>
                                                       <input id="doble-cant" class="line40 cant" type="number" value = 0>
                                                       <div id="doble-more" class="line40 more gris radius" onclick="more('doble-cant')">+</div>
                                                 </div>
                                           </div>
                                           <div class="row" style="display: flex; text-align: center">
-                                                <div class="form-group col-sm-6 text-center line40">Twin's</div>
-                                                <div class="form-group col-sm-6 text-center">
+                                                <div class="form-group col-xs-5 col-sm-6 text-center line40">Twin's</div>
+                                                <div class="form-group col-xs-6 col-sm-6 text-center">
                                                       <div id="twins-less" class="line40 less gris radius" onclick="less('twins-cant')">-</div>
                                                       <input id="twins-cant" class="line40 cant" type="number" value = 0>
                                                       <div id="twins-more" class="line40 more gris radius"  onclick="more('twins-cant')">+</div>
                                                 </div>
                                           </div>
                                           <div class="row" style="display: flex; text-align: center">
-                                                <div class="form-group col-sm-6 text-center line40">Single</div>
-                                                <div class="form-group col-sm-6 text-center">
+                                                <div class="form-group col-xs-5 col-sm-6 text-center line40">Single</div>
+                                                <div class="form-group col-xs-6 col-sm-6 text-center">
                                                       <div id="single-less" class="line40 less gris radius" onclick="less('single-cant')">-</div>
                                                       <input id="single-cant" class="line40 cant" type="number" value = 0>
                                                       <div id="single-more" class="line40 more gris radius"  onclick="more('single-cant')">+</div>
                                                 </div>
                                           </div>
                                           <div  id="total-cabinas" class="row" style="display: flex; text-align: center">
-                                                <div class="form-group col-sm-6 text-center line40">TOTAL</div>
-                                                <div class="form-group col-sm-6 text-center">
+                                                <div class="form-group col-xs-6 col-sm-6 text-center line40">TOTAL</div>
+                                                <div class="form-group col-xs-6 col-sm-6 text-center">
                                                       <input id="total-cant-cabinas" class="doble-cant-total twins-cant-total single-cant-total line40 cant" type="number" value = 0>
                                                 </div>
                                           </div>
@@ -155,7 +177,7 @@
                                      
                               </div>
                         </div>
-                        <div class="form-group col-sm-6">
+                        <div class="form-group col-xs-12 col-sm-6">
                               <div class="input-group">
                                     <span class="input-group-addon"><img src="icons/banios.png" alt=""></span>
                                     <input id="banio" type="text" name="banio" class="form-control" placeholder="Banio" onclick="mostrar('banio')" />
@@ -163,7 +185,7 @@
                               </div>
                               <div id="banio-options" class="back-white" style="display: none">
                                     <div class="row">
-                                          <div class="form-group col-sm-5" style="padding-left: 75px;">
+                                          <div class="col-md-offset-1 col-xs-offset-1 col-sm-offset-1 col-md-5 col-xs-5 col-sm-5">
                                                 <label class="containercheck containercheck-banios">
                                                       <input type="radio" name="banio-radio" value="1"><span class="text-check">1</span>
                                                       <span class="checkmark checkmark-banios"></span>
@@ -177,7 +199,7 @@
                                                       <span class="checkmark checkmark-banios"></span>
                                                 </label>
                                           </div>
-                                          <div class="form-group col-sm-6">
+                                          <div class="form-group col-xs-6 col-sm-6">
                                                 <label class="containercheck containercheck-banios">
                                                       <input type="radio" name="banio-radio" value="4" ><span class="text-check">4</span>
                                                       <span class="checkmark checkmark-banios"></span>

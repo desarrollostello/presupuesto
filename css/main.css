@@ -3,11 +3,37 @@ body{
     background: url('../img/body.jpg') no-repeat bottom;
     background-size: cover;
 }
+
 .container{
     margin-top: 30px;
 }
 #first-section{
     padding: 0px 200px;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+.pr15{
+    padding-right: 15px !important;
+}
+.row, .form-group{
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.row-no-padding > [class*="col-"] {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.row-eq-height-760{
+    padding-top: 35px;
+    padding-bottom: 35px !important;
+    text-align: center;
 }
 
 #second-section{
@@ -67,6 +93,7 @@ body{
 .obligatory{
     position: relative;
     float: left;
+    width: 100%;
     margin-top: 25px;
     margin-bottom: 10px;
     margin-left: 2px;
@@ -117,7 +144,7 @@ body{
 }
 #tipo_barco-options{
     width: 100%;
-    padding-left: 15px;
+    padding-left: 32px;
     padding-right: 15px;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -127,7 +154,7 @@ body{
 }
 
 #cant_personas-options{
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .line40{
@@ -164,8 +191,7 @@ body{
     display: inline-block;
     width: 40px;
     border: 0px;
-    text-align: right;
-    
+    text-align: center;
 }
 .more{
     display: inline-block;
@@ -211,7 +237,7 @@ body{
     padding-left: 35px;
     margin-bottom: 12px;
     cursor: pointer;
-    font-size: 22px;
+    font-size: 16px;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -232,7 +258,7 @@ body{
   
   .checkmark {
     position: absolute;
-    top: 11px;
+    top: 2px;
     left: 0;
     height: 25px;
     width: 25px;
@@ -300,6 +326,14 @@ body{
     line-height: 32px;
   }
 
+  #cabinas-options{
+    font-size: 16px;
+    padding-right: 10px;
+  }
+  #banio-options{
+    padding-top: 20px;
+  }
+
   .containercheck-programa{
       font-size: 15px;
   }
@@ -344,3 +378,18 @@ span.checkmark.checkmark-modelo{
     padding-bottom: 25px;
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    #first-section{
+        padding: 0px 85px;
+    }  
+}
+@media (max-width: 768px) {
+
+    #first-section{
+        padding: 0px 85px;
+    }
+    .containercheck-programa{
+        font-size: 13px;
+    }
+}
