@@ -18,11 +18,18 @@ body{
 .pr15{
     padding-right: 15px !important;
 }
+/*
 .row, .form-group{
     padding-left: 0px;
     padding-right: 0px;
     margin-left: 0px;
     margin-right: 0px;
+}
+*/
+
+.form-group{
+    padding-right: 4px;
+    padding-left: 4px;
 }
 
 .row-no-padding > [class*="col-"] {
