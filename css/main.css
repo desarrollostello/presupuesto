@@ -26,7 +26,10 @@ body{
     margin-right: 0px;
 }
 */
-
+#first-section .row{
+    margin-left: 0px;
+    margin-right: 0px;
+}
 .form-group{
     padding-right: 4px;
     padding-left: 4px;
@@ -70,11 +73,13 @@ body{
     margin: 0 auto;
 }
 
-.first-row{
+#first-section .first-row{
     margin-top: 40px;
 }
 
-.form-control{
+
+#first-section .form-control{
+    border: none;
     -webkit-padding: 20px 20px 20px 0px;
     padding: 20px 20px 20px 10px;
 }
@@ -84,20 +89,20 @@ body{
     padding-left: 0px;
 }
 
-::-moz-placeholder {
+#first-section ::-moz-placeholder {
     font-size: 17px;
     padding-left: 0px;
 }
-:-ms-input-placeholder {
+#first-section :-ms-input-placeholder {
     font-size: 17px;
     padding-left: 0px;
 }
-::-webkit-input-placeholder {
+#first-section ::-webkit-input-placeholder {
     font-size: 17px;
     padding-left: 0px;
 }
 
-.obligatory{
+#first-section .obligatory{
     position: relative;
     float: left;
     width: 100%;
@@ -105,30 +110,30 @@ body{
     margin-bottom: 10px;
     margin-left: 2px;
 }
-.obligatory p{
+#first-section .obligatory p{
     color: #ffffff;
     font-weight: 600;
     text-align: left;
 }
 
 
-#submit{
+#first-section #submit{
     padding: 20px;
     font-weight: 600;
 }
 
-.description{
+#first-section .description{
     color: #ffffff;
     text-align: center;
     font-weight: 600;
     font-size: 16px;
 }
 
-.icons{
+#first-section .icons{
     text-align: center;
 }
 
-#footer{
+#first-section #footer{
     content: "";
     max-height: 650px;
     height: 650px;
@@ -140,13 +145,13 @@ body{
     margin-left: 9px;
 }
 
-.input-group-addon{
+#first-section .input-group-addon{
     background-color: #ffffff;
     border: none;
     border-radius: 0px;
 }
 
-.back-white{
+#first-section .back-white{
     background-color: #ffffff;
 }
 #tipo_barco-options{
@@ -180,7 +185,7 @@ body{
     text-align: rcenter;
 }
 
-.row-eq-height {
+#first-section .row-eq-height {
     background-clip: content-box;
     max-height: 210px;
     height: 210px;
@@ -188,19 +193,19 @@ body{
     margin-bottom: 0px;
   }
 
-.radius{
+#first-section .radius{
     border-radius: 25px 25px 25px 25px;
     -moz-border-radius: 25px 25px 25px 25px;
     -webkit-border-radius: 25px 25px 25px 25px;
 }
 
-.cant{
+#first-section .cant{
     display: inline-block;
     width: 40px;
     border: 0px;
     text-align: center;
 }
-.more{
+#first-section .more{
     display: inline-block;
     width: 40px;
     cursor: pointer;
