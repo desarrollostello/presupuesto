@@ -5,8 +5,8 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <title>Page Title</title>
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css">
-      <link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
       <div class="container">
@@ -45,7 +45,11 @@
                               <div class="input-group">
                                     <span class="input-group-addon"><img src="icons/tb.png" alt=""></span>
                                     <input id="tipo_barco" type="text" name="tipo_barco" class="form-control" placeholder="Tipo de Barco" onclick="mostrar('tipo_barco')" />
+                                    
                                     <input id="tipo_barco-hidden" type="hidden" name="tipo_barco" class="form-control" placeholder="Tipo de Barco"/>
+                                    <span class="input-group-addon">
+                                           <span class="glyphicon glyphicon-menu-down"></span>
+                                    </span>
                               </div>
                               <div id="tipo_barco-options" class="back-white input-group" style="display: none">
                                     <label class="containercheck">
@@ -72,6 +76,11 @@
                               <div class="input-group">
                                     <span class="input-group-addon"><img src="icons/persons.png" alt=""></span>
                                     <input id="cant_personas" type="text" name="cant_personas" class="form-control adultos-cant-input chicos-cant-input bebes-cant-input" placeholder="Cantidad de Personas" onclick="mostrar('cant_personas')" />
+                                     
+                                    <span class="input-group-addon">
+                                           <span class="glyphicon glyphicon-menu-down"></span>
+                                    </span>
+
                                     <input id="cant_personas-hidden" type="hidden" name="cant_personas-hidden" class="form-control adultos-cant-input-hidden chicos-cant-input-hidden bebes-cant-input-hidden" placeholder="Cantidad de Personas"/>
                               </div>
                               <div id="cant_personas-options" class="back-white" style="display: none">
@@ -85,7 +94,7 @@
                                                                         <div id="adultos-less" class="line40 less gris radius" onclick="less('adultos-cant')">-</div>
                                                                   </div>
                                                                   <div class="form-group col-xs-4 col-sm-4 text-center">
-                                                                        <input id="adultos-cant" class="form-control" type="number" value = 0>
+                                                                        <input id="adultos-cant" class="line40 cant" type="number" value = 0>
                                                                   </div>
                                                                   <div class="form-group col-xs-4 col-sm-4 text-center">
                                                                         <div id="adultos-more" class="line40 more gris radius" onclick="more('adultos-cant')">+</div>
@@ -101,7 +110,7 @@
                                                             </div>
 
                                                             <div class="form-group col-xs-4 col-sm-4 text-center">
-                                                                  <input id="chicos-cant" class="form-control" type="number" value = 0>
+                                                                  <input id="chicos-cant" class="line40 cant" type="number" value = 0>
                                                             </div>
                                                             <div class="form-group col-xs-4 col-sm-4 text-center">
                                                                   <div id="chicos-more" class="line40 more gris radius"  onclick="more('chicos-cant')">+</div>
@@ -117,7 +126,7 @@
                                                                   <div id="bebes-more" class="line40 less gris radius" onclick="less('bebes-cant')">-</div>
                                                             </div>
                                                             <div class="form-group col-xs-4 col-sm-4 text-center">
-                                                                  <input id="bebes-cant" class="form-control" type="number" value = 0>
+                                                                  <input id="bebes-cant" class="line40 cant" type="number" value = 0>
                                                             </div>
                                                             <div class="form-group col-xs-4 col-sm-4 text-center">
                                                                   <div id="bebes-more" class="line40 more gris radius"  onclick="more('bebes-cant')">+</div>
@@ -149,6 +158,11 @@
                                     <span class="input-group-addon"><img src="icons/cabinas.png" alt=""></span>
                                     <input id="cabinas" type="text" name="cabinas" class="form-control doble-cant-input twins-cant-input single-cant-input" placeholder="Cabinas"  onclick="mostrar('cabinas')" />
                                     <input id="cabinas-hidden" type="hidden" name="cabinas" class="form-control doble-cant-input-hidden twins-cant-input-hidden single-cant-input-hidden" placeholder="Cabinas"/>
+
+                                    <span class="input-group-addon">
+                                           <span class="glyphicon glyphicon-menu-down"></span>
+                                    </span>
+
                               </div>
                               <div id="cabinas-options" class="back-white" style="display: none">
                                           <div class="row" style="display: flex; text-align: center; padding-top: 20px;">
@@ -190,6 +204,9 @@
                                     <span class="input-group-addon"><img src="icons/banios.png" alt=""></span>
                                     <input id="banio" type="text" name="banio" class="form-control" placeholder="Banio" onclick="mostrar('banio')" />
                                     <input id="banio-hidden" type="hidden" name="banio" class="form-control" placeholder="Banio" />
+                                    <span class="input-group-addon">
+                                           <span class="glyphicon glyphicon-menu-down"></span>
+                                    </span>
                               </div>
                               <div id="banio-options" class="back-white" style="display: none">
                                     <div class="row">
@@ -232,6 +249,9 @@
                                     <span class="input-group-addon"><img src="icons/programa.png" alt=""></span>
                                     <input id="programa" type="text" name="programa" class="form-control" placeholder="Programa"  onclick="mostrar('programa')"/>
                                     <input id="programa" type="hidden" name="programa" class="form-control" placeholder="Programa"/>
+                                    <span class="input-group-addon">
+                                           <span class="glyphicon glyphicon-menu-down"></span>
+                                    </span>
                               </div>
                               <div id="programa-options" class="back-white" style="display: none">
                                     <label class="containercheck containercheck-programa">
@@ -266,6 +286,9 @@
                                     <span class="input-group-addon"><img src="icons/tripulacion.png" alt=""></span>
                                     <input id="tripulacion" type="text" name="tripulacion" class="form-control" placeholder="Tripulación"  onclick="mostrar('tripulacion')"/>
                                     <input id="tripulacion-hidden" type="hidden" name="tripulacion" class="form-control" placeholder="Tripulación" />
+                                    <span class="input-group-addon">
+                                           <span class="glyphicon glyphicon-menu-down"></span>
+                                    </span>
                               </div>
                               <div id="tripulacion-options" class="back-white" style="display: none">
                                     <label class="containercheck">
@@ -295,6 +318,9 @@
                                     <span class="input-group-addon"><img src="icons/marca.png" alt=""></span>
                                     <input id="marca_modelo" type="text" name="marca_modelo" class="form-control" placeholder="Marca / Modelo" onclick="mostrar('marca_modelo')" />
                                     <input id="marca_modelo-hidden" type="hidden" name="marca_modelo" class="form-control" placeholder="Marca / Modelo"/>
+                                    <span class="input-group-addon">
+                                           <span class="glyphicon glyphicon-menu-down"></span>
+                                    </span>
                               </div>
                               <div id="marca_modelo-options" class="back-white" style="display: none">
 

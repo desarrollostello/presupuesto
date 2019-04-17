@@ -15,6 +15,12 @@ body{
     margin-bottom: 10px;
 }
 
+
+.less-more i{
+    color: #F1F4FB;
+    font-size: 30px;
+}
+
 .pr15{
     padding-right: 15px !important;
 }
@@ -177,12 +183,15 @@ body{
     background-color: #eeeeee;
 }
 
-.less{
+#first-section .less{
     display: inline-block;
     text-align: middle;
     width: 40px;
     cursor: pointer;
-    text-align: rcenter;
+    text-align: center;
+    font-size: 33px;
+    color: #cccccc;
+    line-height: 35px;
 }
 
 #first-section .row-eq-height {
@@ -199,6 +208,19 @@ body{
     -webkit-border-radius: 25px 25px 25px 25px;
 }
 
+
+
+
+#first-section input[type=number]::-webkit-inner-spin-button, 
+#first-section input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+#first-section input[type=number] { -moz-appearance:textfield; }
+
+
+
 #first-section .cant{
     display: inline-block;
     width: 40px;
@@ -209,6 +231,10 @@ body{
     display: inline-block;
     width: 40px;
     cursor: pointer;
+    text-align: center;
+    font-size: 30px;
+    color: #cccccc;
+    line-height: 39px;
 }
 
 #cant-personas-display{
