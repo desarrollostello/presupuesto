@@ -57,6 +57,10 @@ body{
     margin-top: 35px;
 }
 
+textarea{
+    resize: none;
+}
+
 #title{
     color: #ffffff;
     font-weight: 600;
@@ -324,12 +328,13 @@ body{
 
   /* pone fondo azul del check cuando esta chequeado */
   .containercheck input:checked ~ .checkmark {
-    background-color: #2196F3;
+    /*background-color: #2196F3;*/
+    color: #1427DB;
   }
 
   /* pone en azul el texto cuando está selecciondo */
    .containercheck input:checked ~ .text-check{
-      color: #2196F3;
+      color: #1427DB;
   }
 
   /* CCrea el checkmark/indicator (Oculto cuando no está seleccionado) */
@@ -346,12 +351,13 @@ body{
 
   /* Estilo checkmark/indicator */
   .containercheck .checkmark:after {
-    left: 9px;
-    top: 5px;
-    width: 5px;
-    height: 10px;
-    border: solid white;
-    border-width: 0 3px 3px 0;
+    left: 10px;
+    top: 0px;
+    width: 9px;
+    height: 20px;
+    color: #1427DB;
+    border: solid #1427DB;
+    border-width: 0 4px 4px 0;
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
@@ -411,7 +417,8 @@ span.checkmark.checkmark-modelo{
     font-size: 15px;
 }
 #tripulacion-options, #marca_modelo-options{
-    padding-left: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
     padding-top: 25px;
     padding-bottom: 25px;
 }
